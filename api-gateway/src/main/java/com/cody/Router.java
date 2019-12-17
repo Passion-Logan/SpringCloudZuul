@@ -1,14 +1,14 @@
 package com.cody;
 
 /**
- * 应用模块名称<p>
+ * 服务网关（路由配置）<p>
  * 代码描述<p>
  * Copyright: Copyright (C) 2019 XXX, Inc. All rights reserved. <p>
  *
  * @author WQL
  * @since 2019年12月17日 0017 19:07
  */
-public class router {
+public class Router {
     /**
      *传统路由配置
      * 所谓的传统路由配置方式就是在不依赖于服务发现机制的情况下，通过在配置文件中具体指定每个路由表达式与服务实例的映射关系来实现API网关对外部请求的路由。
