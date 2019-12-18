@@ -1,8 +1,11 @@
 package com.cody.filter;
 
 import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 应用模块名称<p>
@@ -18,7 +21,7 @@ public class AccessFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return null;
+        return "pre";
     }
 
     @Override
@@ -28,11 +31,17 @@ public class AccessFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     @Override
     public Object run() {
+        RequestContext ctx = RequestContext.getCurrentContext();
+        HttpServletRequest request = ctx.getRequest();
+
+        log.info("send {} request to {}", request.getMethod(), request.getRequestURL().toString());
+
+
         return null;
     }
 }
