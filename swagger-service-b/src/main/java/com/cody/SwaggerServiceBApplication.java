@@ -23,7 +23,7 @@ public class SwaggerServiceBApplication {
         @Autowired
         DiscoveryClient discoveryClient;
 
-        @GetMapping("service-b")
+        @GetMapping("/service-b")
         public String dc() {
             String services = "Services: " + discoveryClient.getServices();
             System.out.println(services);
