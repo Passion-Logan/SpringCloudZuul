@@ -21,5 +21,4 @@ public class ApiGatewayApplication {
     public AccessFilter accessFilter() {
         return new AccessFilter();
     }
-
 }
