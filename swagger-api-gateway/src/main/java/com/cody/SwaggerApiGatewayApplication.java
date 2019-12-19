@@ -30,8 +30,8 @@ public class SwaggerApiGatewayApplication {
         @Override
         public List<SwaggerResource> get() {
             List resources = new ArrayList();
-            resources.add(swaggerResource("service-a", "/swagger-service-a/v1/api-docs", "1.0"));
-            resources.add(swaggerResource("service-b", "/swagger-service-b/v1/api-docs", "1.0"));
+            resources.add(swaggerResource("service-a", "/swagger-service-a/v2/api-docs", "2.0"));
+            resources.add(swaggerResource("service-b", "/swagger-service-b/v2/api-docs", "2.0"));
             return null;
         }
 
