@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 应用模块名称<p>
+ * 过滤器<p>
  * 代码描述<p>
  * Copyright: Copyright (C) 2019 XXX, Inc. All rights reserved. <p>
  *
